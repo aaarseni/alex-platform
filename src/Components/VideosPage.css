@@ -1,0 +1,20 @@
+.video-page-wrapper {
+}
+.video-wrapper {
+    display: flex;
+}
+.video-player {
+    width: 70%;
+
+}
+.video-player video {
+    position: relative;
+    z-index: 1;
+
+}
+.video-list {
+    width: 30%;
+}
+.video-list-item.active {
+    color: red;
+}
