@@ -17,6 +17,13 @@
     height: 80px;
     max-width: 1500px;
   }
+  span{
+    color: #fff;
+    padding: 0 10px ;
+  }
+  a{
+    color: #fff;
+  }
   
   .navbar-logo {
     color: #fff;
@@ -154,5 +161,12 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+    span{
+      color: #fff;
+      
+    }
+    a{
+      color: #fff;
     }
   }

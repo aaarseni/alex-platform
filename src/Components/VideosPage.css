@@ -1,20 +1,38 @@
 .video-page-wrapper {
 }
 .video-wrapper {
-    display: flex;
+  display: flex;
 }
 .video-player {
-    width: 70%;
-
+  width: 70%;
+  padding: 20px;
 }
 .video-player video {
-    position: relative;
-    z-index: 1;
-
+  position: relative;
+  z-index: 1;
 }
 .video-list {
-    width: 30%;
+  width: 30%;
+  padding: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.video-list-items {
+  list-style-type: none;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .video-list-item.active {
-    color: red;
+  color: rgb(141, 141, 141);
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2 {
+  padding-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
