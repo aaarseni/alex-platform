@@ -53,11 +53,11 @@ function Navbar() {
                                 Home
                             </Link>
                         </li>
-                        <li className='nav-item'>
+                        {/*<li className='nav-item'>
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                 Services
                             </Link>
-                        </li>
+                        </li>*/}
                         <li className='nav-item'>
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                 Courses
@@ -77,10 +77,10 @@ function Navbar() {
                     {
                         currentUser
                         && (
-                            <>
-                                <span>{currentUser.email}</span>
+                            <div className="fire-wrapper">
+                                <span>{currentUser.displayName}</span>
                                 <a href="#" onClick={handleSignOut}>Sign Out</a>
-                            </>
+                            </div>
                         )
                     }
                 </div>

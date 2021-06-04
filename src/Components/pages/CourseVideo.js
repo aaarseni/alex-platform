@@ -52,9 +52,9 @@ function CourseVideo() {
             {
                 showModal
                 && <Modal>
-                    <div>
+                    <div className="modal-container">
                         <h2>Please sign in to continue</h2>
-                        <button onClick={handleSignIn}>Sign in</button>
+                        <button className="modal-button" onClick={handleSignIn}>Sign in</button>
                     </div>
                 </Modal>
             }

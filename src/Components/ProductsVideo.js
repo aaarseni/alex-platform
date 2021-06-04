@@ -1,48 +1,45 @@
 import React from 'react';
-import CardItem from './CardItem';
 import './Cards.css';
-
+import CardItem from './CardItem';
+import courses from '../lib/courses'
 
 function Cards() {
+    console.log('ccc', courses)
+
+    const firstTwoCourse = courses.slice(0,2);
+    const restofCourses = courses.slice(2);
+
+    console.log(firstTwoCourse, restofCourses)
+
   return (
     <div className='cards'>
-      <h1>Courses</h1>
+      <h1>Lessons</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/python.jpg'
-              text='AWS Certified Solutions Architect Associate'
-              label='AWS'
-              path='/products/videolist'
-            />
-            <CardItem
-              src='images/c++.jpg'
-              text='C++'
-              label='Back-end'
-              path='/products/videolist'
-            />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/html.jpg'
-              text='HTML - page structure'
-              label='Front-end'
-              path='/products'
-            />
-            <CardItem
-              src='images/css.jpg'
-              text='CSS - styling for the web pages'
-              label='Front-end'
-              path='/products'
-            />
-            <CardItem
-              src='images/js.jpg'
-              text='JS - behavior of the web pages'
-              label='Front-end'
-              path='/products'
-            />
-          </ul>
+        <ul className='cards__items'>
+              {
+                  firstTwoCourse.map(item => {
+                      return <CardItem
+                      src={item.image}
+                      text={item.title}
+                      label={item.label}
+                      path={`/course/${item.id}`}
+                    />
+                  })
+              }
+              </ul>
+              <ul className='cards__items'>
+              {
+                  restofCourses.map(item => {
+                      return <CardItem
+                      src={item.image}
+                      text={item.title}
+                      label={item.label}
+                      path={`/course/${item.id}`}
+                    />
+                  })
+              }
+            </ul>
         </div>
       </div>
     </div>
