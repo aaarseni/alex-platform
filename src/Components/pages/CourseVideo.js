@@ -9,6 +9,7 @@ import CardItem from '../CardItem';
 import '../VideosPage.css'
 import FirebaseHelper from '../../lib/FirebaseHelper';
 import Modal from '../Modal';
+import { Link } from 'react-router-dom';
 
 function CourseVideo() {
     const { id, chapterId, videoId } = useParams()
@@ -76,7 +77,9 @@ function CourseVideo() {
                                 chapter.videos.map(video => {
                                     return (
                                         <li key={`videolist-${video.id}`} className={`video-list-item ${video.id == videoId ? 'active' : ''}`}>
-                                            <p>{video.title}</p>
+                                            {/*<Link to={`/course/${id}/chapter/${chapter.id}`} className={`video-list-item ${video.id == videoId ? 'active' : ''}`}>*/}
+                                                <p>{video.title}</p>
+                                            {/*</Link>*/}
                                         </li>
                                     )
                                 })

@@ -9,7 +9,7 @@ function HeroSection() {
         <div className='hero-container'>
             <video src='/videos/video-2.mp4' autoPlay loop muted />
             <h1>CODING ADVENTURE</h1>
-            <p>What are you await?</p>
+            <p>What are you awaiting?</p>
             <div className='hero-btns'>
                 <Button className='btns' 
                 buttonStyle='btn-outline'
