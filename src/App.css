@@ -58,12 +58,12 @@
   background-color: transparent;
   color: #fff;
   padding: 8px 20px;
-  margin: 8px 20px;;
+  margin: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
 }
 
-.sign-up-button:hover{
+.sign-up-button:hover {
   background: #fff;
   color: #242424;
   transition: all 0.3s ease-out;
